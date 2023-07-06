@@ -1,8 +1,4 @@
-/*.ContentImageDetail {
-
-}*/
-
-.ContentDetail {
+.ContentImageDetail .ContentDetail {
     display: grid;
     grid-template-columns: 50% 50%;
     justify-items: center;
@@ -12,20 +8,25 @@
     display: flex;
 }
 
-.ContentDetail .FirstContent .ContentCharacter {
+.ContentImageDetail .ContentCharacterDetail {
     padding: 20px;
-    border-radius: 20px;
     width: 300px;
     text-align: center;
-    margin: 0 auto;
-    border: 3px solid #778899f8;
-    box-shadow: 4px 4px 4px 4px #778899f8;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    background-color: rgb(245, 245, 245);
 }
 
-.FirstContent .ContentCharacter h1 {
-    background-color: #b0c4de67;
+.ContentCharacterDetail:hover {
+    transform: translate(-3px);
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+.FirstContent .ContentCharacterDetail h1 {
+    background-color: #df913967;
     border-radius: 20px;
-    color: #deb887;
+    color: #b88e58;
     height: 40px;
     justify-content: center;
     align-items: center;
@@ -33,7 +34,7 @@
     font-size: 2.3em;
 }
 
-.FirstContent .ContentCharacter .Name .ContentImage {
+.FirstContent .ContentCharacterDetail .Name .ContentImage {
     height: 250px;
     display: flex;
     align-items: center;
@@ -47,36 +48,67 @@ img.Image {
 }
 
 .FirstContent h3 {
-    background-color: #b0c4de67;
+    background-color: #3677cc67;
     border-radius: 20px;
-    color: #f5f5f5de;
+    color:  #256cc9;
     height: 40px;
     justify-content: center;
     align-items: center;
     display: flex;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 .ContentDetail .ContentDesc {
     padding: 20px;
-    border-radius: 20px;
     width: 300px;
     text-align: center;
-    margin: 0 auto;
-    box-shadow: 4px 4px 4px 4px #778899f8;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    background-color: rgb(245, 245, 245);
+}
+
+.ContentDesc:hover {
+    transform: translate(-3px);
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.6);
 }
 
 .ContentDetail .ContentDesc h2 {
-    color: #deb887;
+    color: #c49c68;
+    text-align: initial;
+    font-size: 1.4em;
 }
 
 .ContentDetail .ContentDesc h3 {
-    background-color: #b0c4de67;
+    background-color: #3677cc67;
     border-radius: 20px;
-    color: #f5f5f5de;
+    color: #256cc9;
     height: 40px;
     justify-content: center;
     align-items: center;
     display: flex;
-    font-size: 1.3em;
+    font-size: 2.3em;
+}
+
+.ContentButton{
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 10px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    background: #4682b4;
+    color: #fff;
+    margin: 5px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }

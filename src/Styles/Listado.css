@@ -1,24 +1,16 @@
-/*.ContentImageList {
-
-}*/
-
-.ContentList {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 25% 25% 25%;
-    margin: 5% auto;
-
+.ContentImageList .TitleList {
+    text-align: center;
 }
 
-.ContentList h1 {
+.ContentImageList .TitleList h1 {
     font-weight: bold;
-    color: #dd973cda;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
+    color: #4f76e0;
+    font-size: 58px;
+    margin: 0;
+    text-decoration: underline #c0bfbfef;
 }
 
-.ContentList button {
+button {
     padding: 10px;
     width: 100px;
     height: 40px;
@@ -28,4 +20,16 @@
     color: #fff;
     margin: 10px;
     font-weight: bold;
+    opacity: 0.9;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.ContentImageList .ContentList {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
 }
